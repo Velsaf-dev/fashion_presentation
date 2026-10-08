@@ -40,6 +40,158 @@
     }
     .img-fallback i { font-size: 48px; color: #a8a29e; }
     .img-fallback span { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+
+    /* ============================================
+       MOBILE ADAPTATION
+       ============================================ */
+    @media (max-width: 1320px) {
+      body {
+        padding: 12px 0;
+        gap: 16px;
+      }
+      .slide-container {
+        width: 100vw;
+        height: auto;
+        min-height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+      }
+
+      /* Slide 1 -- Title */
+      #slide1 {
+        padding: 40px 24px !important;
+        gap: 40px;
+      }
+      #slide1 > div:first-child {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+      }
+      #slide1 h1 {
+        font-size: 34px !important;
+        line-height: 1.15 !important;
+      }
+      #slide1 p {
+        font-size: 16px !important;
+      }
+      #slide1 > div:last-child {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 16px;
+      }
+
+      /* Generic slides padding */
+      #slide2, #slide3, #slide4, #slide5, #slide6 {
+        padding: 36px 22px !important;
+        height: auto !important;
+      }
+      #slide7 {
+        padding: 48px 22px !important;
+        height: auto !important;
+      }
+
+      /* Headings */
+      #slide2 h2, #slide3 h2, #slide4 h2,
+      #slide5 h2, #slide6 h2 {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+      }
+
+      /* Slide 2 -- Core Wardrobe */
+      #slide2 > div:last-child {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+      #slide2 > div:last-child > div:first-child {
+        width: 100%;
+      }
+      #slide2 > div:last-child > div:last-child {
+        width: 100%;
+        height: 280px !important;
+      }
+
+      /* Slide 3 -- Aesthetics grid to single column */
+      #slide3 > div:last-child > div {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+      }
+
+      /* Slide 4 -- Footwear */
+      #slide4 > div:last-child {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+      #slide4 > div:last-child > div:first-child {
+        width: 100%;
+        height: 260px !important;
+      }
+      #slide4 > div:last-child > div:last-child {
+        width: 100%;
+      }
+
+      /* Slide 5 -- Social Media */
+      #slide5 > div:last-child {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+      #slide5 > div:last-child > div:first-child {
+        width: 100%;
+      }
+      #slide5 > div:last-child > div:last-child {
+        width: 100%;
+        height: 240px !important;
+      }
+
+      /* Slide 6 -- Thrift */
+      #slide6 > div:last-child {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+      #slide6 > div:last-child > div:first-child {
+        width: 100%;
+        height: 260px !important;
+      }
+      #slide6 > div:last-child > div:last-child {
+        width: 100%;
+      }
+
+      /* Slide 7 -- Conclusion */
+      #slide7 h2 {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+      }
+      #slide7 p {
+        font-size: 15px !important;
+      }
+      #slide7 > div:nth-of-type(1) {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+        margin-bottom: 32px !important;
+      }
+
+      /* Font sizes on cards */
+      #slide2 p, #slide4 p, #slide5 p, #slide6 p {
+        font-size: 14px !important;
+      }
+      #slide2 [style*="font-size:17px"], #slide4 [style*="font-size:19px"],
+      #slide5 [style*="font-size:17px"], #slide6 [style*="font-size:18px"] {
+        font-size: 16px !important;
+      }
+    }
+
+    /* Smaller phones */
+    @media (max-width: 480px) {
+      #slide1 h1 { font-size: 28px !important; }
+      #slide2 h2, #slide3 h2, #slide4 h2,
+      #slide5 h2, #slide6 h2 { font-size: 22px !important; }
+      #slide7 h2 { font-size: 22px !important; }
+      #slide2, #slide3, #slide4, #slide5, #slide6 {
+        padding: 28px 16px !important;
+      }
+      #slide7 { padding: 36px 16px !important; }
+      #slide1 { padding: 32px 18px !important; }
+    }
   </style>
 </head>
 <body>
